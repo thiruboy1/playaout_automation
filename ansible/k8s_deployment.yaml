@@ -19,7 +19,7 @@ spec:
         app: webapp
     spec:
       containers:
-      - image: thiruboy1/webapp
+      - image: thiruboy1/webapp:1.0
         name: webapp
         resources: {}
 status: {}
