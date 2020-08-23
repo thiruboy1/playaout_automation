@@ -1,6 +1,6 @@
 - hosts: kubemaster
   tasks:
   - name: Create a Deployment by reading the definition from a local file
-  k8s:
-    state: present
-    src: /root/project_share/ansible/k8s_deployment.yaml
+    k8s:
+      state: present
+      src: /root/project_share/ansible/k8s_deployment.yaml
