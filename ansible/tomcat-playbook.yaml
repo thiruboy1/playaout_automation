@@ -1,0 +1,12 @@
+- hosts: node1
+  tasks:
+  - name: Log into DockerHub
+    docker_login:
+       username: thiruboy1
+       password: vasu@12345
+  - name: Build java image and push it to docker hub
+    docker_image:
+         name: thiruboy1/webapp
+         repository: thiruboy1/webapp:1.0
+         push: yes
+         source: local
